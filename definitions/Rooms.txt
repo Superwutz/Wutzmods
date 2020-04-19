@@ -1,0 +1,724 @@
+**
+**		MISC
+**
+ROOM_CONSTRUCTION: {
+	NAME: "Construction",
+	NAMES: "---",
+	JOB_TITLE: "Construction Worker",
+	JOB_HOUR_START: 0,
+	DESC: "---",
+	WIKI_TITLE: "Room Construction",
+	WIKI_CAT: "Misc.",
+	WIKI: "
+All rooms need to be constructed. Rooms must usually be placed indoors, meaning under a roof, 
+with a few exception such as farms.
+%r%%r%
+As you place the rooms, you'll see how much materials will be used in the construction process 
+and also a few pointers concerning the shape and layout of the room. Try to max out these stats.
+%r%%r%
+Other aspects to consider is of course logistics. Try to place rooms close to the production of 
+the resource they are about to consume. Also, try to place service rooms a bit away from noisy
+industries and the like.
+%r%%r%
+Walls are also to be taken into account. Rooms with items can often place these items along walls, 
+meaning you can fit more stuff into them. Walls can also prevent your rooms from becoming 
+traffic jams. Furthermore, walls increase coziness and prevent sound from travelling. 
+%r%%r%
+Once you've finished placing a room, subjects will begin constructing it. 
+First they must gather the resources needed, provided they are available either in your stockpiles,  
+or scattered somewhere on the map. Then they will start building the ground work, 
+finally moving on to the items themselves if such have been placed. 
+	",
+},
+ROOM_REPAIR: {
+	NAME: "Repair",
+	NAMES: "Repairs",
+	DESC: "---",
+	WIKI_TITLE: "Room Repairing",
+	WIKI_CAT: "Misc.",
+	WIKI: "
+If a room is damaged it will need to be repaired in order to function once more. You repair a room 
+by selecting it with the repair tool. 
+%r%%r%
+Repairing subjects will bring the needed materials and then start rebuilding the room until it reaches its
+former glory.
+	",
+},
+ROOM_STOCKPILE: {
+	NAME: "Stockpile",
+	NAMES: "Stockpiles",
+	JOB_TITLE: "Deliveryman",
+	JOB_VERB: "Delivering Goods",
+	JOB_HOUR_START: 6,
+	CRATE: "Crates",
+	CRATE_DESC: "Approximation of available crates.",
+	DESC: "Stores goods and manages distribution and logistics.",
+	WIKI_TITLE: "Stockpiles",
+	WIKI_CAT: "Rooms",
+	STATION: "Crates",
+	STATION_DESC: "Where goods are stored.",
+	WIKI: "Stores goods according to the amount of crates that are designated. Can be manned by delivermen. Deliverymen can carry much more goods than any other worker. Orders can be issued to fetch or to store goods. Fetch will have your deliverymen fetch goods from other stockiples that are not fetching or storing themselves. Storing goods means no one is allowed to use them. Goods can still dissapear by theft and by starving subjects.",
+},
+ROOM_THRONE: {
+	NAME: "The Throne",
+	NAMES: "Thrones",
+	DESC: "Your seat of power",
+	WIKI_TITLE: "The Throne",
+	WIKI_CAT: "Misc.",
+	WIKI: "The throne is your seat of power. It is the centre of your city and anyone not having access to it will be considered lost",
+},
+ROOM_DOOR: {
+	NAME: "Door",
+	NAMES: "Doors",
+	DESC: "Placed at entrances and improves coziness, hinders sound from travelling and enemies from entering.",
+	WIKI_TITLE: "Doors",
+	WIKI_CAT: "Misc.",
+	WIKI: "Placed at entrances and improves coziness, hinders sound from travelling and enemies from entering.",
+},
+ROOM_MONUMENT: {
+	NAME: "Monument",
+	NAMES: "Monuments",
+	DESC: "Placed perferably where subjects and visitors can see them. Increases you influence and inspires awe in your subjects.",
+	WIKI_TITLE: "Monuments",
+	WIKI_CAT: "Misc.",
+	WIKI: "Placed perferrably where subjects and visitors can see them. Increases you influence and inspires awe in your subjects.",
+},
+ROOM_TORCH: {
+	NAME: "Torch",
+	NAMES: "Torches",
+	DESC: "Placed perferrably where subjects and visitors are arround after dark. Makes them feel safe and comfortable. Deterrs missheif.",
+	WIKI_TITLE: "Lights",
+	WIKI_CAT: "Misc.",
+	WIKI: "Placed perferably where subjects and visitors are around after dark. Makes them feel safe and comfortable. Deters mischief.",
+},
+ROOM_LIBRARY: {
+	NAME: "Library",
+	NAMES: "Libraries",
+	JOB_TITLE: "Scribe",
+	JOB_VERB: "Scribing",
+	JOB_HOUR_START: 9,
+	DESC: "Where knowledge is stored and maintained.",
+	STATION: "Scribe Station",
+	AUX: "Extra Shelves",
+	KNOWLEDGE_AMOUNT: 100,
+	DEGRADE_PER_YEAR: 1.0,
+	WIKI_TITLE: "Libraries",
+	WIKI_CAT: "Rooms",
+	WIKI: "
+In a library scribes write and copy tomes of knowledge. The tomes themsleves allow you to activate technologies that can severely elevate your city.%r%%r%
+The size and the furnishing determines the maximum amount of knowledge capacity, which can be further increased by factional bonuses and technologies.
+A library starts empty and scribes will gradually fill it with knowledge, visualized as books and scrolls. 
+The more knowledge a library holds, the more effort scribes will have to put into copying and maintaining existing tombs. 
+Knowledge is used to unlock technologies.
+%r%%r%
+A scribes efficiency is described through the following formula:%r%
+(X + Y) * Z %r%
+X = 0.5 + 'workmanskip bonus and tool bonus' / 2%r%
+Y = 'bonus from tech, race and faction'%r%
+Z = 'room degrade' * (0.5 + 'room efficiency'/2)
+",
+},
+
+ROOM_FARMING_WIKI: {
+	WIKI_TITLE: "Farming",
+	WIKI_CAT: "Misc.",
+	WIKI_LINKS: [ROOM_FARM_GRAIN, ROOM_FARM_VEGETABLE, ROOM_FARM_FRUIT, ROOM_FARM_COTTON,],
+	WIKI: "
+Farms is where subjects turn soil, water, sunlight and time into useful resources, suchs as crops or cotton.
+The work process is governed by the four seasons: 
+%r%%r%
+Spring - Clearing weeds%r%
+Summer - Tending to the crops%r%
+Autumn - Harvesting%r%
+Winter - Resting
+%r%%r%
+This means a farmer isn't very busy Spring and Winter and available for other chores.
+%r%%r%
+Farms are best placed at ground with high fertility. You can see the fertility by holding the right mouse button 
+on the map. If a farm gets all the work it needs, the farmer's work skill and tool level can double the yeild. Technologies and bonuses can further increase this.
+Rain also determines yeild. A 8x8 farm with 30% fertility produces at minumum food for a little more than 1 person. A maxed out farm of the same size can produce for 8 people.
+boosted, 100% fertile farm will produce food for 8 induviduals.
+	",
+},
+
+
+
+**
+**		FARMS
+**
+ROOM_FARM_GRAIN: {
+	NAME: "Grain Farm",
+	NAMES: "Grain Farms",
+	JOB_TITLE: "Grain Farmer",
+	JOB_VERB: "Farming",
+	JOB_HOUR_START: 6,
+	DESC: "Grows grain",
+	WIKI_TITLE: "Grain Farms",
+	WIKI_CAT: "Rooms",
+	WIKI_LINKS: [ROOM_FARMING_WIKI,],
+	WIKI: "Grows grain",
+	YIELD_VALUE: 1.0,
+},
+ROOM_FARM_VEGETABLE: {
+	NAME: "Vegetable Farm",
+	NAMES: "Vegetable Farms",
+	JOB_TITLE: "Vegetable Farmer",
+	JOB_VERB: "Farming",
+	JOB_HOUR_START: 6,
+	DESC: "Grows vegetables",
+	WIKI_TITLE: "Vegetable Farms",
+	WIKI_CAT: "Rooms",
+	WIKI_LINKS: [ROOM_FARMING_WIKI,],	
+	WIKI: "Grows vegetables",
+	YIELD_VALUE: 0.7,
+},
+ROOM_FARM_FRUIT: {
+	NAME: "Fruit Farm",
+	NAMES: "Fruit Farms",
+	JOB_TITLE: "Fruit Farmer",
+	JOB_VERB: "Farming",
+	JOB_HOUR_START: 6,
+	DESC: "Grows fruit",
+	WIKI_TITLE: "Fruit Farms",
+	WIKI_CAT: "Rooms",
+	WIKI_LINKS: [ROOM_FARMING_WIKI,],
+	WIKI: "Grows fruit",
+	YIELD_VALUE: 0.7,
+},
+ROOM_FARM_COTTON: {
+	NAME: "Cotton Farm",
+	NAMES: "Cotton Farms",
+	JOB_TITLE: "Cotton Farmer",
+	JOB_VERB: "Farming",
+	JOB_HOUR_START: 6,
+	DESC: "Grows cotton",
+	WIKI_TITLE: "Cotton Farms",
+	WIKI_CAT: "Rooms",
+	WIKI_LINKS: [ROOM_FARMING_WIKI,],
+	WIKI: "Grows cotton",
+	YIELD_VALUE: 0.8,
+},
+ROOM_FARM_MUSHROOM: {
+	NAME: "Mushroom Farm",
+	NAMES: "Mushroom Farms",
+	JOB_TITLE: "Mushroom Farmer",
+	JOB_VERB: "Farming",
+	JOB_HOUR_START: 6,
+	DESC: "Grows mushrooms",
+	WIKI_TITLE: "Mushroom Farms",
+	WIKI_CAT: "Rooms",
+	WIKI_LINKS: [ROOM_FARMING_WIKI,],
+	WIKI: "Grows mushrooms in northern climates.",
+	YIELD_VALUE: 0.5,
+},
+ROOM_FARM_OPIATES: {
+	NAME: "Opiates Farm",
+	NAMES: "Opiates Farms",
+	JOB_TITLE: "Opiate Farmer",
+	JOB_VERB: "Farming",
+	JOB_HOUR_START: 6,
+	DESC: "Grows Opiates",
+	WIKI_TITLE: "Opiates Farms",
+	WIKI_CAT: "Rooms",
+	WIKI_LINKS: [ROOM_FARMING_WIKI,],
+	WIKI: "Grows spices. Only available in southern climates.",
+	YIELD_VALUE: 0.3,
+},
+ROOM_PASTURE:{
+	NAME: "Animal Pasture",
+	NAMES: "Animal Pastures",
+	JOB_TITLE: "Herder",
+	JOB_VERB: "Herding",
+	JOB_HOUR_START: 6,
+	ANIMALS: "Life stock",
+	ANIMALS_DESC: "The amount of animals ths pasture will hold at maximum",
+	OPENING: "Opening",
+	OPENING_DESC: "The opening for this enclosure and aso where resources will be put",
+	DESC: "Breeds animals that can be slaughtered for pelt and meat.",
+	WIKI_TITLE: "Animal Pasture",
+	WIKI_CAT: "Rooms",
+	WIKI_LINKS: [ROOM_FARMING_WIKI,],
+	WIKI: "Breeds animals that can be slaughtered for pelts and meat.",
+	YIELD_VALUE: 0.5,
+},
+
+
+**
+**		SERVICE
+**
+ROOM_FEASTHALL: {
+	NAME: "Feast Hall",
+	NAMES: "Feast Halls",
+	JOB_TITLE: "Inkeeper",
+	JOB_VERB: "Setting Tables",
+	JOB_HOUR_START: 12,
+	DESC: "Where subjects eat. Increases nurishment and well beeing.",
+	SERVICE: "Set Table",
+	SERVICES: "Set Tables",
+	SERVICE_VERB: "Feasting",
+	WIKI_TITLE: "Feast Halls",
+	WIKI_CAT: "Rooms",
+	WIKI: "
+Where people eat. Eating in a feasthall improves mood and the food's nutritional value.
+	",
+},
+ROOM_DORM: {
+	NAME: "Dormitory",
+	NAMES: "Dormitories",
+	JOB_TITLE: "Steward",
+	JOB_VERB: "Making beds",
+	JOB_HOUR_START: 12,
+	DESC: "Where subjects sleeps. Improves sleep quality",
+	SERVICE: "Made Bed",
+	SERVICES: "Made Beds",
+	SERVICE_VERB: "Sleeping",
+	STATION: "Beds",
+	STATION_DESC: "Where subjects sleep",
+	AUX: "Nicknacks",
+	AUX_DESC: "Elevates the coziness of the room and provides better sleeping quality",
+	COZINESS: "Coziness",
+	COZINESS_DESC: "Coziness is imperative to sleep quality. Irregularly shaped rooms increase coziness, as well as placing nicknacks and carpets.",
+	WIKI_TITLE: "Dormatories",
+	WIKI_CAT: "Rooms",
+	WIKI: "
+Where people sleep. Improves sleep quality.
+	",
+},
+ROOM_GRAVEYARD: {
+	NAME: "Graveyard",
+	NAMES: "Graveyards",
+	JOB_TITLE: "Grave Digger",
+	JOB_VERB: "Burrying Someone",
+	JOB_HOUR_START: 8,
+	DESC: "Where the fallen's bones are laid to rest. A sign of respect towards your subjects. Removing a graveyard might severely damage your reputation.",
+	SERVICE: "Grave",
+	SERVICES: "Graves",
+	SERVICE_VERB: "Mourning",
+	STATION: "Graves",
+	STATION_DESC: "Where bones are laid to rest.",
+	TREE_DESC: "Increases respect",
+	FLOWER_DESC: "Increases respect",
+	STATUE_DESC: "Increases respect",
+	STAT: "Respect",
+	STAT_DESC: "The amount of respect. Incresed by placing trees and flowers. The average respect of your graveyards increases your reputation.",
+	WIKI_TITLE: "Graveyards",
+	WIKI_CAT: "Rooms",
+	WIKI: "
+Where the fallen's bones are layed to rest.
+Well furnished and functioning graveyards is a must for your citizens.
+Sometimes they will visit to mourn their friends and family.
+Removing a graveyard will decrease your reputation. Furnishing your graveyards well will increase it.
+	",
+},
+ROOM_BATH: {
+	NAME: "Bath House",
+	NAMES: "Bath Houses",
+	JOB_TITLE: "Basin Operator",
+	JOB_VERB: "Pouring Bath",
+	JOB_HOUR_START: 4,
+	DESC: "Where subjects freshen up and relax",
+	SERVICE: "Poured Bath",
+	SERVICES: "Poured Baths",
+	SERVICE_VERB: "Bathing",
+	STATION: "baths",
+	STATION_DESC: "Where subjects wash and relax",
+	AUX: "Benches",
+	AUX_DESC: "Where subjects can relax after a bath",
+	HEATING: "Heating",
+	HEATING_DESC: "Heating improves the bathing experience. Make sure there is coal nearby for this to work.",
+	HEATING_PROBLEM: "Poor Heating",
+	WIKI_TITLE: "Bath Houses",
+	WIKI_CAT: "Rooms",
+	WIKI: "
+A subject loves a good bath. Especially if the water is heated and there are benches for them to relax afterwards.
+	",
+},
+ROOM_LAVATORY: {
+	NAME: "Lavatory",
+	NAMES: "Lavatories",
+	JOB_TITLE: "Plumber",
+	JOB_VERB: "Cleaning",
+	JOB_HOUR_START: 8,
+	DESC: "Where subjects to their dirty deeds of need. Releaves them of their constipation.",
+	SERVICE: "Lavatory",
+	SERVICES: "Lavatories",
+	SERVICE_VERB: "Discharging",
+	STATION: "Latrines",
+	STATION_DESC: "For disposing excrements",
+	AUX: "Basins",
+	AUX_DESC: "For washing up afterwards. Improves hygine.",
+	WIKI_TITLE: "Lavatories",
+	WIKI_CAT: "Rooms",
+	WIKI: "
+Where people relieve their costipation.
+	",
+},
+ROOM_KITCHEN: {
+	NAME: "Kitchen",
+	NAMES: "Kitchens",
+	JOB_TITLE: "Cook",
+	JOB_VERB: "Cooking",
+	JOB_HOUR_START: 7,
+	DESC: "Where cooks turn raw food items into tasty meals.",
+	SERVICE: "Meal",
+	SERVICES: "Meals",
+	SERVICE_VERB: "Eating",
+	STATION: "Work Station",
+	STATION_DESC: "Where the cooks work.",
+	AUX: "Utilities",
+	AUX_DESC: "Increases the efficiency of the room",
+	WIKI_TITLE: "Kitchen",
+	WIKI_CAT: "Rooms",
+	WIKI: "
+Where cooks turn raw food items into tasty meals.
+	",
+},
+ROOM_TAVERN: {
+	NAME: "Tavern",
+	NAMES: "Taverns",
+	JOB_TITLE: "Inkeeper",
+	JOB_VERB: "Cleaning",
+	JOB_HOUR_START: 20,
+	DESC: "Where subjects go to eat, drink or just to mingle.",
+	SERVICE: "Table",
+	SERVICES: "Tables",
+	SERVICE_VERB: "Hanging arround",
+	STATION: "Table",
+	STATION_DESC: "Where subjects eat and drink.",
+	COZINESS: "Atmossphere",
+	COZINESS_DESC: "Increased by building the room in an irregular size and by placing Nicknacks.",
+	AUX: "Nicknacks",
+	AUX_DESC: "Increases the atmossphere of the room",
+	WIKI_TITLE: "Tavern",
+	WIKI_CAT: "Rooms",
+	WIKI: "
+A subject brings his own food from a kitchen and if allowed, an alcoholic beverage as well. The innkeepers clean up the mess afterwards.
+	",
+},
+ROOM_BARRACKS: {
+	NAME: "Training Ground",
+	NAMES: "Training Grounds",
+	STAT: "Soldiers",
+	STAT_DESC: "The amount of soldiers this room will train",
+	STATION: "Manikins",
+	STATION_DESC: "Adds capacity to the barracks",
+	JOB_TITLE: "Soldier",
+	JOB_VERB: "Soldiering",
+	JOB_HOUR_START: 4,
+	DESC: "Where subjects are trained into soldiers.",
+	WIKI_TITLE: "Barracks",
+	WIKI_CAT: "Rooms",
+	WIKI: "
+Here subjects will train to become soldiers. You manually set target level of your soldiers and they will train to reach that level. A level one soldier takes one day to train,
+and his training level will drop once every 5 years he will have to be retrained. A level 15 soldier needs to train every day to keep his skill. Soldiers with a level of 1 or above will be deployable
+in battle. You also set the target for battlegear that your soldiers will use as well as race and minimum experience.
+	",
+},
+
+ROOM_INDUSTRY_WIKI: {
+	WIKI_TITLE: "Industry",
+	WIKI_CAT: "Misc.",
+	WIKI_LINKS: [],
+	WIKI: "
+Industry is where it all happens. From mining to tool production. The production of any industry is determined by the following formula: %r%%r%.
+Production = (0.25 + 0.75*(S + T)) * (1.0+B) * (0.5 + E)/2 * D
+%r% S = work skill
+%r% T = tool bonus
+%r% B = bonus from tech, race, management, artifacts 
+%r% E = room efficiency
+%r% D = room degrade 
+",
+},
+
+**
+**		OUTPOSTS
+**
+ROOM_FISHERY: {
+	NAME: "Fishing Outpost",
+	NAMES: "Fishing Outposts",
+	JOB_TITLE: "Fisherman",
+	JOB_VERB: "Fishing",
+	JOB_HOUR_START: 6,
+	DESC: "Catches fish arround shorelines.",
+	WIKI_TITLE: "Fisheries",
+	WIKI_CAT: "Rooms",
+	WIKI_LINKS: [FISH,],
+	WIKI: "
+A designation for where your fishermen are to conduct their trade. Fishing is a very effective way of acquiring food, but a fishing oupost requires a lot of space, else you might overfish the waters. Fish replenish very slowly.
+%r%%r%
+Mineral output is governed by a worker's work-skill, racial bonuses and technologies.
+	",
+},
+ROOM_JANITOR: {
+	NAME: "Janitor",
+	NAMES: "Janitors",
+	JOB_TITLE: "Janitor",
+	JOB_VERB: "Doing job",
+	JOB_HOUR_START: 6,
+	DESC: "Performs jobs and maintenance in its vicinity.",
+	WIKI_TITLE: "Janitors",
+	WIKI_CAT: "Rooms",
+	WIKI_LINKS: [],
+	WIKI: "
+In a janitor outpost you can employ janitors that will perform jobs and maintenance in their vicinity. They are more efficient than unemployed odd jobbers.
+%r%%r%
+Work output is governed by a worker's work-skill, racial bonuses and technologies.
+	",
+},
+ROOM_MINE_ORE: {
+	NAME: "Ore Mine",
+	NAMES: "Ore Mines",
+	JOB_TITLE: "Ore Miner",
+	JOB_VERB: "Mining Ore",
+	JOB_HOUR_START: 5,
+	DESC: "Mines surrounding ore.",
+	WIKI_TITLE: "Ore Mines",
+	WIKI_CAT: "Rooms",
+	WIKI_LINKS: [ROOM_INDUSTRY_WIKI,],
+	WIKI: "
+More of a marker than a room. Mines are built instantly and mark an area of the map where 
+you want to employ a certain number subjects to excavate a certain mineral. Mineers will work 
+within the circle shown when placing the mine until all the minerals are depleted.
+%r%%r%
+Ore output is governed by a worker's work-skill, racial bonuses and technologies.
+	",
+},
+ROOM_MINE_GEMS: {
+	NAME: "Gem Mine",
+	NAMES: "Gem Mines",
+	JOB_TITLE: "Gem Miner",
+	JOB_VERB: "Mining Gems",
+	JOB_HOUR_START: 5,
+	DESC: "Mines surrounding gems",
+	WIKI_TITLE: "Gem Mines",
+	WIKI_CAT: "Rooms",
+	WIKI_LINKS: [ROOM_INDUSTRY_WIKI,],
+	WIKI: "
+More of a marker than a room. Mines are built instantly and mark an area of the map where 
+you want to employ a certain number subjects to excavate a certain mineral. Mineers will work 
+within the circle shown when placing the mine until all the minerals are depleted.
+%r%%r%
+Gem output is governed by a worker's work-skill, racial bonuses and technologies.
+	",
+},
+ROOM_MINE_COAL: {
+	NAME: "Coal Mine",
+	NAMES: "Coal Mines",
+	JOB_TITLE: "Coal Miner",
+	JOB_VERB: "Mining Coal",
+	JOB_HOUR_START: 5,
+	DESC: "Mines surrounding coal",
+	WIKI_TITLE: "Coal Mines",
+	WIKI_CAT: "Rooms",
+	WIKI_LINKS: [ROOM_INDUSTRY_WIKI,],
+	WIKI: "
+More of a marker than a room. Mines are built instantly and mark an area of the map where 
+you want to employ a certain number subjects to excavate a certain mineral. Mineers will work 
+within the circle shown when placing the mine until all the minerals are depleted.
+%r%%r%
+Coal output is governed by a worker's work-skill, racial bonuses and technologies.
+	",
+}, 
+ROOM_QUARRY: {
+	NAME: "Quarry",
+	NAMES: "Quarrys",
+	JOB_TITLE: "Stone Miner",
+	JOB_VERB: "Cutting Stone",
+	JOB_HOUR_START: 5,
+	DESC: "Mines surrounding stone",
+	WIKI_TITLE: "Quarries",
+	WIKI_CAT: "Rooms",
+	WIKI_LINKS: [ROOM_INDUSTRY_WIKI,],
+	WIKI: "
+More of a marker than a room. Quarries are built instantly and mark an area of the map where 
+you want to employ a certain number subjects to cut stone. Stone cutters will work in 
+within the circle shown when placing the quary until all the stone is depleted. 
+%r%%r%
+Unlike just clearing the stones within the area by selecting it for clearing, quarries produce more stone.
+Stone is governed by a worker's work-skill, racial bonuses and technologies.
+	",
+},
+ROOM_WOODCUTTER: {
+	NAME: "Woodcutter",
+	NAMES: "Woodcutters",
+	JOB_TITLE: "Woodcutter",
+	JOB_VERB: "Felling trees",
+	JOB_HOUR_START: 10,
+	DESC: "Fells surrounding trees and produces wood.",
+	WIKI_TITLE: "Woodcutters",
+	WIKI_CAT: "Rooms",
+	WIKI_LINKS: [ROOM_INDUSTRY_WIKI,],
+	WIKI: "
+More of a marker than a room. Woodcutters are built instantly and mark an area of the map where 
+you want to employ a certain number subjects to cut down trees and produce the wood resource. 
+Woodcutters will work in within the circle shown when placing it until all the resources trees have
+been felled. Trees will regrow in time, but that process is slow. 
+%r%%r%
+Unlike just clearing the trees within the area by selecting it for clearing, woodcutters produce more wood.
+Output is governed by a worker's work-skill, racial bonuses and technologies.
+	",
+},
+ROOM_HUNTER: {
+	NAME: "Hunter Outpost",
+	NAMES: "Hunter Outposts",
+	JOB_TITLE: "Hunter",
+	JOB_VERB: "Hunting Game",
+	JOB_HOUR_START: 3,
+	DESC: "Hunts game and turns them into food an pelts",
+	WIKI_TITLE: "Hunter Outposts",
+	WIKI_CAT: "Rooms",
+	WIKI_LINKS: [ROOM_INDUSTRY_WIKI,],
+	WIKI: "
+Placed preferably in the outskirts of the city, as game tends to shy away from humanoids. Will hunt the 
+game within the area indicated when placing it. Hunting game is good for three things:
+%r%%r%
+1. Produces tasty meat
+2. Produces pelts
+3. Keeps wild animals out of your city.
+%r%
+Wild animals can destroy rooms, frighten and even kill your subjects.
+	",
+},
+
+**
+**		REFINERS
+**
+ROOM_METAL_SMELTER: {
+	NAME: "Metal Smelter",
+	NAMES: "Metal Smelters",
+	JOB_TITLE: "Metal Smelter",
+	JOB_VERB: "Smelting metal",
+	JOB_HOUR_START: 10,
+	DESC: "Turns coal and ore into metal.",
+	STATION: "Furnace",
+	AUX: "Auxilary Furnace",
+	PRODUCTION_TIME: 45.0,
+	WIKI_TITLE: "Foundries",
+	WIKI_CAT: "Industry",
+	WIKI: "Turns coal and ore into metal.",
+	WIKI_LINKS: [COAL,ORE,METAL,ROOM_INDUSTRY_WIKI,],
+},
+ROOM_GLASS_SMELTER: {
+	NAME: "Glass Smelter",
+	NAMES: "Glass Smelters",
+	JOB_TITLE: "Glass Smelter",
+	JOB_VERB: "Smelting glass",
+	JOB_HOUR_START: 10,
+	DESC: "Turns coal and quartz into glass.",
+	STATION: "Furnace",
+	AUX: "Auxilary Furnace",
+	PRODUCTION_TIME: 45.0,
+	WIKI_TITLE: "Glass Foundries",
+	WIKI_CAT: "Industry",
+	WIKI: "Turns coal and quartz into glass.",
+	WIKI_LINKS: [COAL,ORE,METAL,ROOM_INDUSTRY_WIKI,],
+},
+ROOM_WEAVER: {
+	NAME: "Weaver",
+	NAMES: "Weavers",
+	JOB_TITLE: "Weaver",
+	JOB_VERB: "Weaving Fabric",
+	JOB_HOUR_START: 10,
+	DESC: "Turns coal and cotton into fabric",
+	STATION: "Sewing Machine",
+	AUX: "Auxilary Machines",
+	PRODUCTION_TIME: 45.0,
+	WIKI_TITLE: "Weavers",
+	WIKI_CAT: "Industry",
+	WIKI: "Turns coal and cotton into fabric",
+	WIKI_LINKS: [COAL,COTTON,FABRIC,ROOM_INDUSTRY_WIKI,],
+},
+ROOM_COALER: {
+	NAME: "Coaler",
+	NAMES: "Coalers",
+	JOB_TITLE: "Coaler",
+	JOB_VERB: "Coaling",
+	JOB_HOUR_START: 10,
+	DESC: "Turns wood into coal",
+	STATION: "Kiln",
+	AUX: "Auxilary Kiln",
+	PRODUCTION_TIME: 45.0,
+	WIKI_TITLE: "Coalers",
+	WIKI_CAT: "Industry",
+	WIKI: "Turns wood into coal",
+	WIKI_LINKS: [WOOD,COAL,ROOM_INDUSTRY_WIKI,],
+},
+
+**
+**		WORKSHOPS
+**
+ROOM_TOOL_SMITH: {
+	NAME: "Tool Smith",
+	NAMES: "Tool Smiths",
+	JOB_TITLE: "Tool Smith",
+	JOB_VERB: "Forgin Tools",
+	JOB_HOUR_START: 9,
+	DESC: "Turns coal and metal into tools.",
+	STATION: "Work Bench",
+	AUX: "Auxilary Equipment",
+	PRODUCTION_RATE: 1.0,
+	WIKI_TITLE: "Tool Smiths",
+	WIKI_CAT: "Industry",
+	WIKI_LINKS: [COAL, METAL, TOOL, ROOM_INDUSTRY_WIKI,],
+	WIKI: "Turns coal and metal into tools.",
+},
+ROOM_WEAPON_SMITH: {
+	NAME: "Battlegear Smith",
+	NAMES: "Battlegear Smiths",
+	JOB_TITLE: "Batte Smith",
+	JOB_VERB: "Forgin Battlegear",
+	JOB_HOUR_START: 9,
+	DESC: "Turns coal and metal into equipment for your soldiers.",
+	STATION: "Work Bench",
+	AUX: "Auxilary Equipment",
+	PRODUCTION_RATE: 0.1,
+	WIKI_TITLE: "Battlegear Smiths",
+	WIKI_CAT: "Industry",
+	WIKI_LINKS: [COAL, METAL, BATTLE_GEAR, ROOM_INDUSTRY_WIKI,],
+	WIKI: "Turns coal and metal into battlegear.",
+},
+ROOM_TAILOR: {
+	NAME: "Tailor",
+	NAMES: "Tailors",
+	JOB_TITLE: "Tailor",
+	JOB_VERB: "Sewing Clothes",
+	JOB_HOUR_START: 9,
+	DESC: "Turns coal and fabric / pelts into clothes.",
+	STATION: "Work Bench",
+	AUX: "Auxilary Equipment",
+	PRODUCTION_RATE: 1.0,
+	WIKI_TITLE: "Tailors",
+	WIKI_CAT: "Industry",
+	
+	WIKI: "Turns coal and fabric / pelts into clothes.",
+},
+ROOM_STONE_CUTTER: {
+	NAME: "Stone Cutter",
+	NAMES: "Stone Cutters",
+	JOB_TITLE: "Mason",
+	JOB_VERB: "Cutting Stone",
+	JOB_HOUR_START: 5,
+	DESC: "Turns stone into cut stone.",
+	STATION: "Work Bench",
+	AUX: "Auxilary Equipment",
+	PRODUCTION_RATE: 0.4,
+	WIKI_TITLE: "Stone Cutters",
+	WIKI_CAT: "Industry",
+	
+	WIKI: "Turns stone into cut stone.",
+},
+ROOM_CARPENTER: {
+	NAME: "Carpenter",
+	NAMES: "Carpenters",
+	JOB_TITLE: "Wood Worker",
+	JOB_VERB: "Building Furniture",
+	JOB_HOUR_START: 9,
+	DESC: "Turns wood into furniture.",
+	STATION: "Work Bench",
+	AUX: "Auxilary Equipment",
+	PRODUCTION_RATE: 0.4,
+	WIKI_TITLE: "Carpenters",
+	WIKI_CAT: "Industry",
+	
+	WIKI: "Turns wood into furniture",
+},
