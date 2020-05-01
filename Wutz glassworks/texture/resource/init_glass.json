@@ -1,0 +1,12 @@
+{
+     //basic init
+    "name": "glass",
+	"names": "glass",
+	"type": "processed",
+	"wiki": "Fine glass. Light shines through. Used for windows and other stuff. Careful, easy to break!"
+    "texture": "Resource_glass",
+	//parameters for the asset
+    "weight": 10,
+    "stacksize": 64,
+	"degrade_rate": 0.0
+}

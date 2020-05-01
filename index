@@ -1,0 +1,14 @@
+{
+    <ressource
+    "name": "stone",
+    "ID": "01",
+	>
+    <ressource
+    "name": "wood",
+    "ID": "02",
+	>
+	    <ressource
+    "name": "ore",
+    "ID": "03",
+	>
+}

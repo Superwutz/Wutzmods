@@ -1,0 +1,13 @@
+{
+     //basic init
+    "name": "window",
+	"names": "window",
+	"type": "regular",
+	"wiki": "Windows let light shine through."
+    "texture": "BuildingWindow",
+	//parameters for the asset
+    "durability": 20,
+    "timetobuild": 25,
+	"cost": 5,
+	"ressource": "Glass"
+}

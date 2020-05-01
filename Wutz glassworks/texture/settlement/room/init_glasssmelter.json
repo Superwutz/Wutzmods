@@ -1,0 +1,22 @@
+{
+     //basic init
+    "name": "Glass Smelter",
+	"names": "Glass Smelters",
+	"type": "refiners",
+	"desc": "Turns coal and quartz into glass.",
+	"job_title": "Glass Smelter",
+	"job_verb": "Smelting glass",
+	"station": "Furnace",
+	"aux": "Auxilary Furnace",
+    "texture": "Industry_glasssmelter",
+	//parameters for the asset
+	"job_hour_start": 10,
+	"production_time": 45,
+	"ressources_needed": [COAL, QUARTZ]
+	"amounts_needed": [1, 4]
+	//wiki entry
+	"wiki_title": "Glass Foundries",
+	"wiki_cat": "Industry",
+	"wiki": "Turns coal and quartz into glass",
+	"wiki_links": [COAL, ORE, METAL, ROOM_INDUSTRY_WIKI,]
+}

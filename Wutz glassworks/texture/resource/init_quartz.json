@@ -1,0 +1,12 @@
+{
+     //basic init
+    "name": "quartz",
+	"names": "quartz",
+	"type": "raw",
+	"wiki": "Shiny stone. Might be possible to smelt it!"
+    "texture": "Resource_quartz",
+	//parameters for the asset
+    "weight": "15",
+    "stacksize": "64",
+	"degrade_rate": 0.0
+}
