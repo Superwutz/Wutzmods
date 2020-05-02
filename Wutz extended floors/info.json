@@ -1,10 +1,10 @@
 {
-    "name": "Wutz glassworks",
+    "name": "Wutz extended floors",
     "version": "0.1.0",
-    "title": "Glassworks",
+    "title": "Extended floors",
     "author": "Superwutz",
     "contact": "Superwutz#0815",
     "homepage": "",
     "sos_version": "51.38",
-    "description": "Adds an industry branch for glassworks to the game"
+    "description": "Adds some more floors to the game"
 }
