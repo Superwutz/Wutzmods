@@ -1,0 +1,77 @@
+PLAYABLE: true,
+NAME: "Argonosh",
+NAMES: "Argonosh",
+POSSESSIVE: "Argono",
+WIKI: {
+	NAME: "Argonosh",
+	CATEGORY: "Subjects",
+	CATEGORIES: ["Subjects",],
+	TEXT: 
+"
+The Argonosh are a very ancient race. The have been dwelling the depths of the Sian Mountains since the old time. Normally they live in a hivemind society with a queen which both breeds their spawn 
+and also is their common "sense". Although a hivemind in their agelong existence some Argonosh hives seem to have developed some kind of individuality for their insects and are also progressing in fields of
+technology, tool making and even clothes! However once the queen of a hive dies, without having spawned a new one before, the hive collapses and the whole population either dies or wander out, becoming wild Argonosh. 
+It is said that all Argonosh once formed a giant, world spanning hive which was controlled by their great Queen, Empress Shmalor. Empress Shmalor was said to be one of the hugest and strongest beings in the old time
+and legends say she is still crawling and hunting somewhere deep below the Sian Mountains. Always hungry, always looking for her hive.
+",
+},
+
+DESC: 
+"The Argonosh are a very ancient race. The have been dwelling the depths of the Sian Mountains since the old time. Normally they live in a hivemind society with a queen which both breeds their spawn 
+and also is their common "sense". Although a hivemind in their agelong existence some Argonosh hives seem to have developed some kind of individuality for their insects and are also progressing in fields of
+technology, tool making and even clothes! However once the queen of a hive dies, without having spawned a new one before, the hive collapses and the whole population either dies or wander out, becoming wild Argonosh. 
+It is said that all Argonosh once formed a giant, world spanning hive which was controlled by their great Queen, Empress Shmalor. Empress Shmalor was said to be one of the hugest and strongest beings in the old time
+and legends say she is still crawling and hunting somewhere deep below the Sian Mountains. Always hungry, always looking for her hive.
+",
+FIRST_NAMES: [
+	"Grarsh", "Azogh", "Blorrh", "Shelob", "Sparrogh", "Hinzorrh",
+],
+SURNAMES: [
+	"Spawn of Shmalor", "Hans",
+],
+DEATHAGE: 30,
+MASS: 120,
+ACCELERATION: 4,
+TOP_SPEED: 5,
+HEIGHT: 9,
+WIDTH: 9,
+SPRITE: argonosh,
+GUI: 0,
+FONT: 0,
+TECHNOLOGIES: [
+	*,
+],
+PREFFERED_FOOD: [MEAT,FISH,MUSHROOM,GRAIN,],
+
+COLORS: {
+	SKIN: [
+		{R: 6, G: 35, B: 60,},
+		{R: 0, G: 25, B: 45,},
+		{R: 35, G: 23, B: 0,},
+		{R: 23, G: 14, B: 0,},
+		{R: 72, G: 48, B: 10,},
+		{R: 51, G: 10, B: 9,},
+		{R: 43, G: 5, B: 1,},
+		{R: 21, G: 6, B: 6,},
+	],
+	HAIR: [
+		{R: 98, G: 49, B: 49,},
+		{R: 91, G: 28, B: 28,},
+		{R: 71, G: 22, B: 22,},
+		{R: 119, G: 106, B: 40,},
+		{R: 98, G: 87, B: 33,},
+		{R: 98, G: 56, B: 33,},
+		{R: 75, G: 42, B: 25,},
+		{R: 59, G: 37, B: 0,},
+	],
+	CLOTHES: [
+		{R: 57, G: 50, B: 17,},
+		{R: 71, G: 63, B: 22,},
+		{R: 41, G: 90, B: 47,},
+		{R: 31, G: 67, B: 35,},
+		{R: 52, G: 62, B: 119,},
+		{R: 39, G: 47, B: 90,},
+		{R: 26, G: 32, B: 61,},
+		{R: 96, G: 38, B: 0,},
+	],
+},
