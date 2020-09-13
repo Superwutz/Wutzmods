@@ -1,0 +1,2 @@
+NAME: "Big Stone Slabs",
+DESC: "Our stonecutters did their best to make those slabs as big as possible!",
