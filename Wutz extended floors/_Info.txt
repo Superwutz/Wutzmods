@@ -1,0 +1,7 @@
+VERSION: "0.1",
+GAME_VERSION_MAJOR: 53,
+GAME_VERSION_MINOR: 10,
+NAME: "Wutz extended floors",
+DESC: ""Adds some more flooring to the game",
+AUTHOR: "Superwutz#0815",
+INFO: "https://github.com/Superwutz/Wutzmods", 
