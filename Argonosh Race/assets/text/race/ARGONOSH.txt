@@ -1,0 +1,19 @@
+NAME: "Argonosh",
+NAMES: "Argonosh",
+POSSESSIVE: "Argono",
+DESC: 
+"The Argonosh are a very ancient race. Although a hivemind in their agelong existence some Argonosh hives seem to have developed some kind of individuality for their insects and are also progressing in fields of
+technology, tool making and even clothes!"
+",
+DESC_LONG:
+"The Argonosh are a very ancient race. The have been dwelling the depths of the Sian Mountains since the old time. Normally they live in a hivemind society with a queen which both breeds their spawn 
+and also is their common "sense". Although a hivemind in their agelong existence some Argonosh hives seem to have developed some kind of individuality for their insects and are also progressing in fields of
+technology, tool making and even clothes! However once the queen of a hive dies, without having spawned a new one before, the hive collapses and the whole population either dies or wander out, becoming wild Argonosh. 
+It is said that all Argonosh once formed a giant, world spanning hive which was controlled by their great Queen, Empress Shmalor. Empress Shmalor was said to be one of the hugest and strongest beings in the old time
+and legends say she is still crawling and hunting somewhere deep below the Sian Mountains. Always hungry, always looking for her hive.
+",
+
+FIRST_NAMES: ArgoFirst,
+SURNAMES: ArgoLast,
+FIRST_NAMES_NOBLE: ArgoFirstNoble,
+SURNAMES_NOBLE: ArgoLast,

@@ -1,0 +1,13 @@
+MASS: 120,
+SPEED: 5,
+HEIGHT: 9,
+
+SOUND: SHEEP,
+
+SPRITE: WildArgonosh,
+COLOR: [6,35,60,], 
+
+CARAVAN: false,
+
+RESOURCES: [MEAT,],
+RESOURCE_AMOUNT: [3,],

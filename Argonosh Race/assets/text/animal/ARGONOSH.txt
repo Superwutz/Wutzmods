@@ -1,0 +1,13 @@
+INFO: {
+	NAME: "Wild Argonosh",
+	NAMES: "Wild Argonosh",
+	DESC: "The Argonosh are a very ancient race.",
+	WIKI: {
+		CATEGORY: "Animals",
+		NAME: "Wild Argonosh",
+		TEXT: 
+		"However once the queen of a hive dies, without having spawned a new one before, the hive collapses and the whole population either dies or wander out, becoming wild Argonosh.",
+		KEY: "ANIMAL_ARGONOSH",
+		LINKS: [],
+	},
+},

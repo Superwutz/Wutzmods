@@ -1,0 +1,9 @@
+NAMES: [
+	"Grarsh", 
+	"Azogh", 
+	"Blorrh", 
+	"Shelob", 
+	"Sparrogh", 
+	"Hinzorrh",
+	"Swoosh",
+],

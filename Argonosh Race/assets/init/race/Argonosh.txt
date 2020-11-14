@@ -1,77 +1,186 @@
 PLAYABLE: true,
-NAME: "Argonosh",
-NAMES: "Argonosh",
-POSSESSIVE: "Argono",
-WIKI: {
-	NAME: "Argonosh",
-	CATEGORY: "Subjects",
-	CATEGORIES: ["Subjects",],
-	TEXT: 
-"
-The Argonosh are a very ancient race. The have been dwelling the depths of the Sian Mountains since the old time. Normally they live in a hivemind society with a queen which both breeds their spawn 
-and also is their common "sense". Although a hivemind in their agelong existence some Argonosh hives seem to have developed some kind of individuality for their insects and are also progressing in fields of
-technology, tool making and even clothes! However once the queen of a hive dies, without having spawned a new one before, the hive collapses and the whole population either dies or wander out, becoming wild Argonosh. 
-It is said that all Argonosh once formed a giant, world spanning hive which was controlled by their great Queen, Empress Shmalor. Empress Shmalor was said to be one of the hugest and strongest beings in the old time
-and legends say she is still crawling and hunting somewhere deep below the Sian Mountains. Always hungry, always looking for her hive.
-",
+
+PHYSICS: {
+	MASS: 120,
+	ACCELERATION: 4,
+	TOP_SPEED: 6,
+	HEIGHT: 9,
+	WIDTH: 9,
 },
 
-DESC: 
-"The Argonosh are a very ancient race. The have been dwelling the depths of the Sian Mountains since the old time. Normally they live in a hivemind society with a queen which both breeds their spawn 
-and also is their common "sense". Although a hivemind in their agelong existence some Argonosh hives seem to have developed some kind of individuality for their insects and are also progressing in fields of
-technology, tool making and even clothes! However once the queen of a hive dies, without having spawned a new one before, the hive collapses and the whole population either dies or wander out, becoming wild Argonosh. 
-It is said that all Argonosh once formed a giant, world spanning hive which was controlled by their great Queen, Empress Shmalor. Empress Shmalor was said to be one of the hugest and strongest beings in the old time
-and legends say she is still crawling and hunting somewhere deep below the Sian Mountains. Always hungry, always looking for her hive.
-",
-FIRST_NAMES: [
-	"Grarsh", "Azogh", "Blorrh", "Shelob", "Sparrogh", "Hinzorrh",
-],
-SURNAMES: [
-	"Spawn of Shmalor", "Hans",
-],
-DEATHAGE: 30,
-MASS: 120,
-ACCELERATION: 4,
-TOP_SPEED: 5,
-HEIGHT: 9,
-WIDTH: 9,
-SPRITE: argonosh,
-GUI: 0,
-FONT: 0,
-TECHNOLOGIES: [
+TECH: [
 	*,
 ],
-PREFFERED_FOOD: [MEAT,FISH,MUSHROOM,GRAIN,],
 
-COLORS: {
-	SKIN: [
-		{R: 6, G: 35, B: 60,},
-		{R: 0, G: 25, B: 45,},
-		{R: 35, G: 23, B: 0,},
-		{R: 23, G: 14, B: 0,},
-		{R: 72, G: 48, B: 10,},
-		{R: 51, G: 10, B: 9,},
-		{R: 43, G: 5, B: 1,},
-		{R: 21, G: 6, B: 6,},
+PREFERRED: {
+	FOOD: [
+		MEAT,
+		FISH,
+		MUSHROOM,
 	],
-	HAIR: [
-		{R: 98, G: 49, B: 49,},
-		{R: 91, G: 28, B: 28,},
-		{R: 71, G: 22, B: 22,},
-		{R: 119, G: 106, B: 40,},
-		{R: 98, G: 87, B: 33,},
-		{R: 98, G: 56, B: 33,},
-		{R: 75, G: 42, B: 25,},
-		{R: 59, G: 37, B: 0,},
-	],
-	CLOTHES: [
-		{R: 57, G: 50, B: 17,},
-		{R: 71, G: 63, B: 22,},
-		{R: 41, G: 90, B: 47,},
-		{R: 31, G: 67, B: 35,},
-		{R: 52, G: 62, B: 119,},
-		{R: 39, G: 47, B: 90,},
-		{R: 26, G: 32, B: 61,},
-		{R: 96, G: 38, B: 0,},
-	],
+	STRUCTURE: {
+		MOUNTAIN: 1.0,
+		STONE: 0.5,
+		GRAND: 0.7,
+	},
+	WORK: {
+		WORKSHOP_TOOL: 1.0,
+		WORKSHOP_WEAPON: 1.0,
+	},
+},
+
+BONUS: {
+	MISC: {
+		TUNNEL: 0.8,
+		WORKSHOP: 0.3,
+		FARM: -0.1,
+	},
+	ROOMS: {
+		WORKSHOP_TOOL: 0.1,
+		WORKSHOP_WEAPON: 0.1,
+	},
+},
+
+TRAITS: {
+	FIGHTER: 0.1,
+	GLUTTON: 0.1,
+	SLEEPER: 0.1,
+	SPRINTER: 0.1,
+},
+
+APPEARANCE: {
+	SPRITE: Argonosh,
+	SPRITE_EXTRA: Normal,
+	BALD_RATE: 0.4,
+	BEARD_RATE: 0.9,
+	TURNS_GRAY: false,
+	EARS_OFF: 0,
+	EYES_OFF: 0,
+	EYEBROW_OFF: 0,
+	NOSE_OFF: 1,
+	MOUTH_OFF: 0,
+	BEARD1_OFF: 1,
+	BEARD2_OFF: 1,
+	HAIR_OFF: 1,
+	COLORS: {
+		SKIN: [
+			{R: 29, G: 12, B: 4,},
+			{R: 119, G: 48, B: 16,},
+			{R: 96, G: 39, B: 13,},
+			{R: 74, G: 26, B: 10,},
+			{R: 52, G: 18, B: 7,},
+			{R: 21, G: 9, B: 3,},
+			{R: 54, G: 28, B: 7,},
+			{R: 77, G: 34, B: 10,},
+		],
+		HAIR: [
+			{R: 198, G: 114, B: 54,},
+			{R: 96, G: 27, B: 11,},
+			{R: 196, G: 174, B: 153,},
+			{R: 154, G: 128, B: 101,},
+			{R: 18, G: 18, B: 18,},
+			{R: 35, G: 35, B: 35,},
+			{R: 32, G: 26, B: 26,},
+			{R: 136, G: 46, B: 20,},
+			{R: 84, G: 21, B: 3,},
+			{R: 54, G: 4, B: 7,},
+			{R: 61, G: 9, B: 11,},
+			{R: 35, G: 19, B: 15,},
+			{R: 102, G: 59, B: 16,},
+			{R: 58, G: 36, B: 15,},
+			{R: 116, G: 92, B: 66,},
+			{R: 136, G: 46, B: 20,},
+		],
+		CLOTHES: [
+			{R: 114, G: 101, B: 35,},
+			{R: 142, G: 126, B: 44,},
+			{R: 83, G: 181, B: 94,},
+			{R: 62, G: 135, B: 70,},
+			{R: 105, G: 125, B: 239,},
+			{R: 79, G: 94, B: 181,},
+			{R: 53, G: 64, B: 122,},
+			{R: 193, G: 77, B: 0,},
+		],
+		ARMOUR: [
+			{R: 107, G: 79, B: 65,},
+			{R: 99, G: 99, B: 99,},
+			{R: 168, G: 168, B: 180,},
+			{R: 209, G: 159, B: 54,},
+		],
+		
+		EYE: [
+			{R: 128, G: 173, B: 206,},
+			{R: 104, G: 141, B: 168,},
+			{R: 142, G: 193, B: 229,},
+			{R: 32, G: 74, B: 104,},
+			{R: 9, G: 110, B: 183,},
+			{R: 75, G: 196, B: 23,},
+			{R: 142, G: 196, B: 222,},
+			{R: 29, G: 114, B: 119,},
+			{R: 162, G: 151, B: 131,},
+			{R: 87, G: 95, B: 132,},
+			{R: 19, G: 80, B: 36,},
+		],
+		LEG: [
+			{R: 29, G: 12, B: 4,},
+			{R: 119, G: 48, B: 16,},
+		],
+	},
+},
+
+
+
+PROPERTIES: {
+
+},
+
+STATS: {
+	SERVICE: {
+		_SERVICE_DORM: {
+			DEFAULT_ACCESS: 0.5,
+			STANDING: {
+				FROM: 1.0,
+				TO: 3.0,
+				MULTIPLIER: 1.0,
+				EXPONENT: 1.0,
+			},
+		},
+	},
+	
+	EQUIPABLE: {
+		_CLOTHES: {
+			ARRIVAL_AMOUNT: 3,
+			DEFAULT_LEVEL: 3,
+			STANDING: {
+				FROM: 1,
+				TO: 2,
+				MULTIPLIER: 1,
+				EXPONENT: 0.8,
+			},
+		},
+	},
+	
+	ACCESS: {
+	
+	},
+	
+	FOOD: {
+	
+	},
+	
+	BATTLE: {
+	
+	},
+	
+	NEEDS: {
+	
+	},
+	
+	WORK: {
+	
+	},
+	
+	MISC: {
+	
+	},
 },
