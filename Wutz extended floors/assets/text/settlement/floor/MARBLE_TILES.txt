@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 NAME: "Marble Tiles",
+=======
+NAME: "Marble Tiles",
+>>>>>>> a384b87662878287ae4ffbb962b5b33cc865ebff
 DESC: "Fancy tiles out of our most pristine material",

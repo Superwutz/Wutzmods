@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 NAME: "Big Stone Slabs",
+=======
+NAME: "Big Stone Slabs",
+>>>>>>> a384b87662878287ae4ffbb962b5b33cc865ebff
 DESC: "Our stonecutters did their best to make those slabs as big as possible!",

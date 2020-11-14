@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 SPRITE: BigStoneSlabs,
 COLOR_MASK: [127,127,127,],
 ROAD: {
@@ -10,3 +11,17 @@ ROAD: {
 },
 
 
+=======
+SPRITE: BigStoneSlabs,
+COLOR_MASK: [127,127,127,],
+ROAD: {
+	REP_BONUS: 0.8,
+	SPEED: 4,
+	RESOURCE: STONE,
+	RESOURCE_AMOUNT: 2,
+	DURABILITY: 0.9,
+	MINIMAP_COLOR: [85, 85, 85,],
+},
+
+
+>>>>>>> a384b87662878287ae4ffbb962b5b33cc865ebff
